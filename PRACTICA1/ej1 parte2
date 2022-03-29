@@ -1,0 +1,22 @@
+1. Realizar un programa que lea 10 números enteros e informe la suma total de los números leídos.
+a. Modifique el ejercicio 1 para que además informe la cantidad de números mayores a 5
+
+
+
+program ej1;
+var
+	suma,a,num,may5:integer;
+begin
+	suma:=0;
+	may5:=0;
+	for a:=  1 to 10 do
+	begin
+		writeln('ingresar numeros');
+		readln(num);
+		suma:=suma + num;
+		if(num>5)then
+		may5:= may5 +1;
+	end;
+	writeln('la suma es: ',suma);
+	writeln('la cantidad de numeros mas grande que 5 son: ',may5)
+end.
