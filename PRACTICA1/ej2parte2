@@ -1,0 +1,17 @@
+program ej2practica1.2;
+var
+	max,num,a,pos:integer;
+begin
+	max:=-1;
+	writeln('ingresar 10 numeros : ');
+	for a:= 1 to 10 do
+	begin
+		readln(num);
+		if(num>max)then
+			begin
+				max:=num;
+				pos:=a;
+			end;
+	end;
+	writeln('el numero ingresado mas grande es',max,'en la posicion',pos);
+end.
