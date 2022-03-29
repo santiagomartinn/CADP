@@ -1,3 +1,12 @@
+Realizar un programa que lea el número de legajo y el promedio de cada alumno de la facultad. La
+lectura finaliza cuando se ingresa el legajo -1, que no debe procesarse.
+○ La cantidad de alumnos leída 
+○ La cantidad de alumnos cuyo promedio supera 6.5 
+○ El porcentaje de alumnos destacados (alumnos con promedio mayor a 8.5)//
+
+
+
+
 program ejercicio6;	
 var
 	legajo: real;
