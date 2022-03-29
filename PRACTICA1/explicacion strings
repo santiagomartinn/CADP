@@ -1,0 +1,18 @@
+program ideone;
+type
+	cadena50 = string[50]; //el maximo valor que pueden poner es 255
+var
+	nombre1, nombre2: cadena50;
+begin
+	(* your code goes here *)
+	readln(nombre1);
+ 
+	nombre2:= 'Will Smith';
+ 
+	if (nombre1 = nombre2) then //>       <            <>
+		writeln('los nombre son iguales')
+	else
+		writeln('los nombre no son iguales');
+ 
+	writeln(nombre1)
+end.
