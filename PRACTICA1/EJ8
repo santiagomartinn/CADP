@@ -1,0 +1,17 @@
+{Program Practica1_8;
+Var 
+  c1,c2,c3: char;
+Begin
+  write('Ingrese el primer caracter: ');
+  readln(c1);
+  write('Ingrese el segundo caracter: ');
+  readln(c2);
+  write('Ingrese el tercer caracter: ');
+  readln(c3);
+  If ( ((c1='a') Or (c1='e') Or (c1='i') Or (c1='o') Or (c1='u')) And
+     ((c2='a') Or (c2='e') Or (c2='i') Or (c2='o') Or (c2='u')) And
+     ((c3='a') Or (c3='e') Or (c3='i') Or (c3='o') Or (c3='u')) ) Then
+    write('Los tres caracteres son vocales')
+  Else
+    write('Al menos un caracter no era vocal');
+End.
