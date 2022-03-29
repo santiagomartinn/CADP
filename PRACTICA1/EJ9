@@ -1,0 +1,25 @@
+program prac1ej9 ;
+var
+    numero, resultado: integer;
+    car: char;
+begin
+    writeln('ingrese un caracter:');
+    readln(car);
+    resultado:= 0;
+    if (car='+') or (car='-') then begin
+      writeln('ingrese un numero:');
+      readln(numero);
+      while (numero <> 0) do begin
+          if (car='+') then 
+            resultado:= resultado + numero
+          else begin
+            resultado:= resultado - numero;
+          end;
+          writeln('ingrese un numero:'); 
+          readln(numero);
+      end;
+   end
+   else
+        writeln('ocurrio un error');
+    writeln('resultado: ', resultado);
+end.
