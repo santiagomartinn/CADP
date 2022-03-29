@@ -1,0 +1,27 @@
+program ej7;
+var
+	codigo,precioActual,precioNuevo,aumento:real;
+begin
+	precioActual:=0;
+	precioNuevo:=0;
+	aumento:=0;
+	write('Ingresar codigo: ' );
+	codigo:=0;
+	read(codigo);
+			
+
+	
+	while(codigo<>32767)do	
+		begin
+			writeln('Ingrese el precio actual: ' );
+			read(precioActual);
+			writeln('El precio actual es: ',precioActual:5:3);
+			
+			writeln('Ingrese el nuevo precio: ');
+			read(precioNuevo);
+			writeln('El precio nuevo es: ' , precioNuevo:5:3);
+			
+			aumento:=((precioNuevo-precioActual)/precioActual)*100;
+			writeln('El porcentaje es: ',aumento:3:2);
+		end
+end.
