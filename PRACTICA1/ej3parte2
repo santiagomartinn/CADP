@@ -1,0 +1,28 @@
+program ej3pt2;
+type
+	rangoNota=1..10;
+	cadena=string[20];
+var
+	nombre:cadena;
+	nota:rangoNota;
+	notaSiete,notaOcho:integer;		
+begin
+	notaSiete:=0;
+	notaOcho:=0;
+	repeat
+		writeln('Ingresar nombre del alumno: ');
+		readln(nombre);
+		writeln('ingresar nota: ');
+		readln(nota);
+		if nota>=8 then 
+			begin
+				notaOcho:=notaOcho +1;
+			end;
+		if nota=7 then
+			notaSiete:=notaSiete +1;
+			
+	until (nombre= 'Zidane Zinedine');
+	
+	writeln('La cantidad de alumnos con nota 8 o superior son: ',notaOcho);
+	writeln('La cantidad de alumnos con nota 7 son: ',notaSiete);
+end.
