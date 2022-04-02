@@ -1,0 +1,20 @@
+program	ej4pt2;
+var
+	numero,min1,min2,i:Integer;
+begin
+	min1:=32400;
+	min2:=32400;
+	writeln('Ingresar numero: ');
+	for i:= 1 to 10 do begin
+		readln(numero);
+		if(numero<min1)then begin
+			min2:=min1;
+			min1:=numero;
+		end;
+		
+		if (numero< min2) and (numero <> min1) then
+			min2 := numero;
+	end;
+	writeln('los 2 numero mas bajos son ',min1,'y',min2);
+end.
+			
