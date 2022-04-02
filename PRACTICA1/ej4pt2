@@ -1,3 +1,11 @@
+4. Realizar un programa que lea 1000 números enteros desde teclado. Informar en pantalla cuáles son
+los dos números mínimos leídos.
+
+
+
+
+
+
 program	ej4pt2;
 var
 	numero,min1,min2,i:Integer;
